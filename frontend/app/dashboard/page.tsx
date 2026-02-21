@@ -983,6 +983,18 @@ export default function DashboardPage() {
                 workspaceId={workspaceId || undefined}
                 variant="dock"
               />
+
+              {/* Footer */}
+              <div className="flex items-center justify-center py-3 px-4">
+                <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-tertiary)' }}>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg>
+                  <span>Private & local</span>
+                  <span>|</span>
+                  <span>Data never leaves your servers</span>
+                </div>
+              </div>
             </motion.div>
           ) : (
             <motion.div
@@ -1009,6 +1021,18 @@ export default function DashboardPage() {
                   workspaceId={workspaceId || undefined}
                   variant="hero"
                 />
+              </div>
+
+              {/* Footer */}
+              <div className="flex items-center justify-center py-3 px-4 mt-8">
+                <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-tertiary)' }}>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg>
+                  <span>Private & local</span>
+                  <span>|</span>
+                  <span>Data never leaves your servers</span>
+                </div>
               </div>
             </motion.div>
           )}
